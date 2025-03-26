@@ -8,7 +8,10 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Brand */}
           <div className="mb-6 md:mb-0">
-            <Link to="/" className="flex items-center gap-2 text-primary font-semibold text-xl mb-4">
+            <Link
+              to="/"
+              className="flex items-center gap-2 text-primary font-semibold text-xl mb-4"
+            >
               <span className="bg-primary text-white rounded-md h-8 w-8 flex items-center justify-center">
                 A
               </span>
@@ -18,24 +21,43 @@ export default function Footer() {
               Connecting graduates with opportunities, events, and each other.
             </p>
           </div>
-          
+
           {/* Social Links */}
           <div className="flex space-x-4">
-            <SocialLink href="#" icon={<Facebook className="h-5 w-5" />} />
-            <SocialLink href="#" icon={<Twitter className="h-5 w-5" />} />
-            <SocialLink href="#" icon={<Instagram className="h-5 w-5" />} />
-            <SocialLink href="#" icon={<Linkedin className="h-5 w-5" />} />
+            <SocialLink
+              href="https://www.facebook.com/WORLDNITCAA/"
+              icon={<Facebook className="h-5 w-5" />}
+            />
+            <SocialLink
+              href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://x.com/official_nitcaa&ved=2ahUKEwjA87KC8aiMAxX9cGwGHahtHWgQFnoECBcQAQ&usg=AOvVaw0sVO3ZpqRcj_mHleBvgLF3"
+              icon={<Twitter className="h-5 w-5" />}
+            />
+            <SocialLink
+              href="https://www.instagram.com/nitcaa_official/"
+              icon={<Instagram className="h-5 w-5" />}
+            />
+            <SocialLink
+              href="https://in.linkedin.com/company/nitcaa"
+              icon={<Linkedin className="h-5 w-5" />}
+            />
           </div>
         </div>
-        
+
         <div className="mt-8 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground text-center md:text-left mb-4 md:mb-0">
-            © {new Date().getFullYear()} Alumni Affairs Network-NITC. All rights reserved.
+            © {new Date().getFullYear()} Alumni Affairs Network-NITC. All rights
+            reserved.
           </p>
           <div className="flex space-x-6">
-            <FooterLink href="/privacy" size="sm">Privacy Policy</FooterLink>
-            <FooterLink href="/terms" size="sm">Terms of Service</FooterLink>
-            <FooterLink href="/contact" size="sm">Contact Us</FooterLink>
+            <FooterLink href="/privacy" size="sm">
+              Privacy Policy
+            </FooterLink>
+            <FooterLink href="/terms" size="sm">
+              Terms of Service
+            </FooterLink>
+            <FooterLink href="/About" size="sm">
+              Contact Us
+            </FooterLink>
           </div>
         </div>
       </div>
