@@ -12,6 +12,7 @@ import Alumni from "./pages/Alumni";
 import Login from "./pages/Login.js";
 import NotFound from "./pages/NotFound";
 import Blogs from "./pages/Blogs";
+import BlogDetail from "./pages/BlogDetail";
 import CreateBlog from "./pages/CreateBlog";
 import About from "./pages/About";
 import Recaaa from "./pages/Recaaa";
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/alumni-chat" element={<AlumniChat />} />
           <Route path="/login" element={<Login />} />
           <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/create-blog" element={<CreateBlog />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
